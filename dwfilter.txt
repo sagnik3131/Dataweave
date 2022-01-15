@@ -1,5 +1,6 @@
 //Using the dataweave filter function and sorting out 
 //some records based upopn filter  condition
+//filter dataweave tutorial
 output application/json
 ---
 employees : payload filter $.emloyeeName == "Sagnik" map {
