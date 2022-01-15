@@ -2,6 +2,8 @@
 //some records based upopn filter  condition
 //filter dataweave tutorial
 //more tutorials are comming soon please wait
+//bye
+//tomorrow is our exam
 output application/json
 ---
 employees : payload filter $.emloyeeName == "Sagnik" map {
