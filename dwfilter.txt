@@ -1,0 +1,23 @@
+//Using the dataweave filter function and sorting out 
+//some records based upopn filter  condition
+output application/json
+---
+employees : payload filter $.emloyeeName == "Sagnik" map {
+
+	employeeId: $.employeeId,
+	employeeName: $.employeeName,
+	salary: $.salary
+}
+
+
+========================================================================================
+
+
+employees : payload filter $.emloyeeName == "Sagnik" and $.employeeName != "Rajat" map {
+
+	employeeId: $.employeeId,
+	employeeName: $.employeeName,
+	salary: $.salary
+}
+
+
